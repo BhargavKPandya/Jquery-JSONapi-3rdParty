@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>JSON Weather API test</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+    <script src="js/weather.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div>
+        <p>Enter city name to see weather related inforation</p>
+        <input type="text" maxlength="20" id="cityField" />
+        <button id="submitbtn">Submit</button>
+    </div>
+    <div>
+        <table style="display: none;" id="tblWeather">
+            <tr>
+                <td>Country:</td>
+                <td id="popupWeatherCountry"></td>
+            </tr>
+            <tr>
+                <td>City:</td>
+                <td id="popupWeatherCity"></td>
+            </tr>
+            <tr>
+                <td>Temparature:</td>
+                <td id="popupWeatherTemp"></td>
+            </tr>
+            <tr>
+                <td>Humidity:</td>
+                <td id="popupWeatherHumidity"></td>
+            </tr>
+            <tr>
+                <td>General Weather Info:</td>
+                <td id="popupWeatherDesc"></td>
+            </tr>
+        </table>
+        <p id="errormsg1" style="display: none;"></p>
+    </div>
+
+</body>
+
+</html>
